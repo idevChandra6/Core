@@ -1,5 +1,5 @@
 
-XCODE_PROJECT="QR.xcodeproj"
+XCODE_PROJECT="Core.xcodeproj"
 
 echo "=== Present working directory === \n$PWD"
 
