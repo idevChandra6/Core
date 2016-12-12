@@ -1,0 +1,23 @@
+machine:
+  environment:
+    XCODE_SCHEME: Core
+    XCODE_PROJECT: Core.xcodeproj
+    DEVELOPER_NAME: Chandra Polepeddi
+    APPNAME: Core
+
+machine:
+  xcode:
+    version: "8.1"
+  environment:
+    XCODE_SCHEME: Core
+    DEVELOPER_NAME: Chandra Polepeddi
+    APPNAME: Core
+
+deployment:
+  testflight:
+    branch: master
+    commands:
+      - bash build.sh
+test:
+  override:
+    - echo "Tests are overridden"
